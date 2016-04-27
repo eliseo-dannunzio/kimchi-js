@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+	</head>
+	<script src="kimchi.min.js"></script>
+	<body onLoad="kimchi.ferment();">
+		<!-- kimchi.ferment() transcribes all "kimchi" tags to their respective Korean equivalents -->
+		<kimchi>gug-eoui romaja pyogibeop bulgogi bibimbap</kimchi> - some random words in Korean<br/>
+		<kimchi>Kim Yu Suk</kimchi>: the name of a genuine Korean Olympic high jumper<br />
+		Pyeong-yang in Korean is <span id="test"></span>
+		<p>English: All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.<p>
+		<p>Korean (<kimchi>hangug-eo</kimchi>): <kimchi>Modeun Ingan-eun Tae-eonal ttaebuteo Jayuroumyeo Geu Jon-eomgwa Gwonrie Iss-eo Dongdeunghada. Ingan-eun Cheonbujeog-euro Iseong-gwa Yangsim-eul Bu-yeobad-ass-eumyeo Seoro Hyeongje-ae-ui Jeongsin-euro Haengdongha-yeo-yahanda.</kimchi></p>
+
+		<script>
+			// kimchi.ferment does an on-the-fly transcription of the text passed into the method.
+			document.getElementById("test").innerHTML = kimchi.pickle("pyeong-yang");
+		</script>
+	</body>
+</html>
